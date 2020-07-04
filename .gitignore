@@ -1,0 +1,4 @@
+bin/*
+build/*
+*.db
+*.sh
