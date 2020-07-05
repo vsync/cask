@@ -1,7 +1,7 @@
 CC = clang
 INCLUDES = -Isrc
 DEFINES = -D_GNU_SOURCE
-CFLAGS = -Weverything -Wno-padded -Wno-disabled-macro-expansion -std=c11 -c $(DEFINES) $(INCLUDES)
+CFLAGS = -Weverything -Wno-padded -Wno-disabled-macro-expansion -fno-strict-aliasing -std=c11 -c $(DEFINES) $(INCLUDES)
 LDFLAGS = -lpthread
 SRCDIR = src
 OBJDIR = build/cask
